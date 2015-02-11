@@ -1,0 +1,11 @@
+c:\users\scar\documents\visual studio 2013\Projects\LifePunch Quickjoin\LifePunch Quickjoin\bin\Debug\LifePunch Quickjoin.exe.config
+c:\users\scar\documents\visual studio 2013\Projects\LifePunch Quickjoin\LifePunch Quickjoin\bin\Debug\LifePunch Quickjoin.exe
+c:\users\scar\documents\visual studio 2013\Projects\LifePunch Quickjoin\LifePunch Quickjoin\bin\Debug\LifePunch Quickjoin.pdb
+c:\users\scar\documents\visual studio 2013\Projects\LifePunch Quickjoin\LifePunch Quickjoin\bin\Debug\Ionic.BZip2.dll
+c:\users\scar\documents\visual studio 2013\Projects\LifePunch Quickjoin\LifePunch Quickjoin\bin\Debug\QueryMaster.dll
+c:\users\scar\documents\visual studio 2013\Projects\LifePunch Quickjoin\LifePunch Quickjoin\obj\Debug\LifePunch_Quickjoin.Form1.resources
+c:\users\scar\documents\visual studio 2013\Projects\LifePunch Quickjoin\LifePunch Quickjoin\obj\Debug\LifePunch_Quickjoin.Properties.Resources.resources
+c:\users\scar\documents\visual studio 2013\Projects\LifePunch Quickjoin\LifePunch Quickjoin\obj\Debug\LifePunch Quickjoin.csproj.GenerateResource.Cache
+c:\users\scar\documents\visual studio 2013\Projects\LifePunch Quickjoin\LifePunch Quickjoin\obj\Debug\LifePunch Quickjoin.exe
+c:\users\scar\documents\visual studio 2013\Projects\LifePunch Quickjoin\LifePunch Quickjoin\obj\Debug\LifePunch Quickjoin.pdb
+c:\users\scar\documents\visual studio 2013\Projects\LifePunch Quickjoin\LifePunch Quickjoin\obj\Debug\LifePunch Quickjoin.csprojResolveAssemblyReference.cache

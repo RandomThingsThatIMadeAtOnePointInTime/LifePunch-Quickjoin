@@ -1,0 +1,66 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LifePunch_Quickjoin" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="Jailbreak1Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">jb1.lifepunch.net</Value>
+    </Setting>
+    <Setting Name="Jailbreak2Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">jb2.lifepunch.net</Value>
+    </Setting>
+    <Setting Name="Jailbreak3Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">jb3.lifepunch.net</Value>
+    </Setting>
+    <Setting Name="Jailbreak4Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">jb4.lifepunch.net</Value>
+    </Setting>
+    <Setting Name="Jailbreak5Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">jb5.lifepunch.net</Value>
+    </Setting>
+    <Setting Name="Jailbreak6Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">jb6.lifepunch.net</Value>
+    </Setting>
+    <Setting Name="Jailbreak7Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">jb7.lifepunch.net</Value>
+    </Setting>
+    <Setting Name="Jailbreak8Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">jb8.lifepunch.net</Value>
+    </Setting>
+    <Setting Name="Jailbreak9Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">jb9.lifepunch.net</Value>
+    </Setting>
+    <Setting Name="Deathrun1Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dr1.lifepunch.net</Value>
+    </Setting>
+    <Setting Name="Deathrun2Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dr2.lifepunch.net</Value>
+    </Setting>
+    <Setting Name="Deathrun3Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dr3.lifepunch.net</Value>
+    </Setting>
+    <Setting Name="Deathrun4Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dr4.lifepunch.net</Value>
+    </Setting>
+    <Setting Name="Deathrun5Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dr5.lifepunch.net</Value>
+    </Setting>
+    <Setting Name="Gungame1Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">gg1.lifepunch.net</Value>
+    </Setting>
+    <Setting Name="Gungame2Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">gg2.lifepunch.net</Value>
+    </Setting>
+    <Setting Name="Bunnyhop1Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">bh1.lifepunch.net</Value>
+    </Setting>
+    <Setting Name="Bunnyhop2Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">bh2.lifepunch.net</Value>
+    </Setting>
+    <Setting Name="Bunnyhop3Host" Type="System.String" Scope="User">
+      <Value Profile="(Default)">bh3.lifepunch.net</Value>
+    </Setting>
+    <Setting Name="CinemaHost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">cn.lifepunch.net</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
