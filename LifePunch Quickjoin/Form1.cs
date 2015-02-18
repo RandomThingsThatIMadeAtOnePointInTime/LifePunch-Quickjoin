@@ -23,8 +23,15 @@ namespace LifePunch_Quickjoin
 
         IPAddress resolveIP(string hostname)
         {
-            IPAddress[] address = Dns.GetHostAddresses(hostname);
-            return address[0];
+            try
+            {
+                IPAddress[] address = Dns.GetHostAddresses(hostname);
+                return address[0];
+            }
+            catch
+            {
+                return null;
+            }
         }
         void gotoLink(string hostname)
         {
@@ -46,16 +53,31 @@ namespace LifePunch_Quickjoin
         void updateServer(string id, string hostname, TextBox map, TextBox players, TextBox ping)
         {
             logBox.Items.Add("Attempting to look up " + hostname);
-            Server server = ServerQuery.GetServerInstance(EngineType.Source, resolveIP(hostname).ToString(), 27015);
-            ServerInfo serverInfo = server.GetInfo(); //Throws System.Net.Sockets.SocketException will add catch later
-
-            logBox.Items.Add("Result for " + hostname + ":");
-            logBox.Items.Add(" -Map: " + serverInfo.Map);
-            logBox.Items.Add(" -Players/Maxplayers: " + serverInfo.Players + "/" + serverInfo.MaxPlayers);
-            logBox.Items.Add(" -Ping: " + serverInfo.Ping);
-            map.Text = serverInfo.Map;
-            players.Text = serverInfo.Players + "/" + serverInfo.MaxPlayers;
-            ping.Text = serverInfo.Ping.ToString();
+            try
+            {
+                Server server = ServerQuery.GetServerInstance(EngineType.Source, resolveIP(hostname).ToString(), 27015);
+                try
+                {
+                    ServerInfo serverInfo = server.GetInfo();
+                    logBox.Items.Add("Result for " + hostname + ":");
+                    logBox.Items.Add(" -Map: " + serverInfo.Map);
+                    logBox.Items.Add(" -Players/Maxplayers: " + serverInfo.Players + "/" + serverInfo.MaxPlayers);
+                    logBox.Items.Add(" -Ping: " + serverInfo.Ping);
+                    map.Text = serverInfo.Map;
+                    players.Text = serverInfo.Players + "/" + serverInfo.MaxPlayers;
+                    ping.Text = serverInfo.Ping.ToString();
+                }
+                catch (System.Net.Sockets.SocketException e)
+                {
+                    logBox.Items.Add("ERROR: Failed to get information for \"" + hostname + "\"! (" + e.ToString() + ")");
+                    map.Text = "Server offline";
+                }
+            }
+            catch (System.NullReferenceException e)
+            {
+                logBox.Items.Add("ERROR: Unknown host \"" + hostname + "\"! (" + e.ToString() + ")");
+                map.Text = "Server offline";
+            }
         }
         void refreshServers()
         {
@@ -90,6 +112,18 @@ namespace LifePunch_Quickjoin
         private void Form1_Load(object sender, EventArgs e)
         {
             refreshServers();
+
+            // Version check
+            int version = 1;
+            using (WebClient client = new WebClient())
+            {
+                int latestVersion = Convert.ToInt32(client.DownloadString("https://raw.githubusercontent.com/Scarsz/LifePunch-Quickjoin/master/version"));
+                if (version < latestVersion)
+                {
+                    MessageBox.Show("This version of Quickjoin is outdated, please download the newest version.");
+                    System.Diagnostics.Process.Start("https://github.com/Scarsz/LifePunch-Quickjoin/releases/latest");
+                }
+            }
         }
         private void refreshButton_Click(object sender, EventArgs e)
         {
